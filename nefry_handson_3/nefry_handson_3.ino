@@ -30,7 +30,7 @@ String getTrainDelayJson() {
 
   if (httpCode == HTTP_CODE_OK) {
     // 成功だったら、運行情報の文字列を取得して保存
-    String payload = http.getString();
+    payload = http.getString();
     Nefry.println("接続成功");
     Nefry.println(payload);
   } else {
